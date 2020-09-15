@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>my Exam</title>
+</head>
+<link rel="stylesheet" href="a.css">
+<body>
+    <audio controls autoplay class="hidden" loop="true">
+        <source src="musik.mp3" type="audio/mpeg">
+</audio>
+    <form action="pizza" class="tab" method="post" name="f1"> 
+    
+<div class="main">
+
+ <!--cards -->
+ <h3> PIZZA</h3>
+<div class="card">
+    <div class="image">
+    <img src="img/1.jpg">
+</div>
+
+<div class="title">
+ <h1>PIZZA 1</h1>
+</div>
+<div class="price">
+ <h2>$ 8</h2>
+ <input type="radio" name="pizza" id="pizza1" value="pizza1" onclick="pizzarun(8,'pizza1');" />
+</div>
+</div>
+
+<!--cards -->
+<div class="card">
+    <div class="image">
+    <img src="img/2.jpg">
+</div>
+
+<div class="title">
+ <h1>PIZZA 2</h1>
+</div>
+<div class="price">
+ <h2>$ 10</h2>
+ <input type="radio" name="pizza" id="pizza2" value="pizza2" onclick="pizzarun(10,'pizza2');" />
+</div>
+</div>
+
+<!--cards -->
+<div class="card">
+    <div class="image">
+    <img src="img/1.jpg">
+</div>
+
+<div class="title">
+ <h1>PIZZA 3</h1>
+</div>
+<div class="price">
+ <h2>$ 12</h2>
+ <input type="radio" name="pizza" id="pizza3" value="pizza3" onclick="pizzarun(12,'pizza3');" />
+</div>
+</div>
+<!--cards -->
+
+
+
+<div class="size">    
+<h3> SIZE</h3>
+    
+<!--cards -->   
+<div class="card2">
+<div class="title">
+<h1>Small</h1>
+</div>
+<input type="radio" name="size" id="small" onclick="sizerun(-1,1);" />
+</div>
+
+<div class="card2">
+    <div class="title">
+    <h1>Medium</h1>
+    </div>
+    <input type="radio" name="size" id="medium" onclick="sizerun(0,2);" />
+    </div>
+
+<div class="card2">
+    <div class="title">
+    <h1>Large</h1>
+    </div>
+    <input type="radio" name="size" id="large" onclick="sizerun(2,3);" />
+    </div>
+
+
+<div class="toppings">    
+<h4>Toppings</h4> 
+<div class="card3">
+<div>
+<input type="checkbox" id="1"  name="toppings" value="avocado" onclick="runTotal(1,1);" />Avocado<br />
+<input type="checkbox" id="2"  name="toppings" value="broccoli" onclick="runTotal(1,2);" />Broccoli<br />
+<input type="checkbox" id="3"  name="toppings" value="onions" onclick="runTotal(1,3);" />Onions<br />  
+<input type="checkbox" id="4"  name="toppings" value="zucchini" onclick="runTotal(1,4);" />Zucchini<br />   
+   
+ </div>
+</div>
+
+
+ <div class="card3">
+    <div>
+        <input type="checkbox" id="5"  name="toppings" value="lobster" onclick="runTotal(2,5);" />Lobster <br /> 
+        <input type="checkbox" id="6"  name="toppings" value="oyster" onclick="runTotal(2,6);" />Oyster <br /> 
+        <input type="checkbox" id="7"  name="toppings" value="salmon" onclick="runTotal(2,7);" />Salmon<br /> 
+        <input type="checkbox" id="8"  name="toppings" value="tuna" onclick="runTotal(2,8);" />Tuna <br />  
+     </div>
+    </div>
+
+    <div class="card3">
+        <div>
+            <input type="checkbox" id="9"  name="toppings" value="bacon" onclick="runTotal(3,9);" />Bacon<br />  
+            <input type="checkbox" id="10"  name="toppings" value="duck" onclick="runTotal(3,10);" />Duck<br />      
+            <input type="checkbox" id="11"  name="toppings" value="ham" onclick="runTotal(3,11);" />Ham<br /> 
+            <input type="checkbox" id="12"  name="toppings" value="sausage" onclick="runTotal(3,12);" />Sausage<br /> 
+             
+         </div>
+        </div>
+
+        <h2>PRICE</h2>
+        <p><input type="number" id="total" value="0"> </p>
+      <input type="submit" value="submit" /> <input type ="reset">  
+        
+      </div>
+      </form> 
+      <script src="1.js"></script>
+    </body>
+    </html>
